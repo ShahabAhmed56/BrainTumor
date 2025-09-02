@@ -24,4 +24,8 @@ The app allows you to upload MRI images, run real-time detection, visualize boun
 ---
 
 ## 📂 Project Structure
-
+📦 BrainTumorYOLOv11
+┣ 📜 app.py # Main Streamlit app
+┣ 📜 best.pt # Trained YOLOv11 model weights
+┣ 📜 requirements.txt # Python dependencies
+┣ 📜 README.md # Project documentation
