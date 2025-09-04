@@ -31,5 +31,5 @@ This Streamlit app uses a custom-trained YOLOv11 model to detect brain tumors fr
 git clone https://github.com/yourusername/brain-tumor-yolov11.git
 cd brain-tumor-yolov11
 pip install -r requirements.txt
-streamlit run app_brain_tumor.py
+streamlit run app.py
 
