@@ -1,31 +1,35 @@
 # 🧠 YOLOv11 Brain Tumor Detection App
 
-This repository contains a **Streamlit web application** for brain tumor detection using a custom-trained **YOLOv11** model.  
-The model has been trained on MRI brain scans with four classes:  
-
-- **Pituitary**  
-- **No Tumor**  
-- **Meningioma**  
-- **Glioma**
-
-The app allows you to upload MRI images, run real-time detection, visualize bounding boxes, and download the results.
+This Streamlit app uses a custom-trained YOLOv11 model to detect brain tumors from MRI scans. It supports detection of **Pituitary**, **Meningioma**, **Glioma**, and **No Tumor** classes. Users can upload one or more images, view detection results, and download annotated outputs directly from the browser.
 
 ---
 
 ## 🚀 Features
 
-✅ Upload **single or multiple MRI images**  
-✅ Detect **Pituitary, No Tumor, Meningioma, Glioma**  
-✅ Visualize results with bounding boxes on MRI scans  
-✅ View detection details (**class, confidence, coordinates**)  
-✅ Download processed images with detections  
-✅ Powered by **YOLOv11** and **Streamlit**  
+- Upload multiple MRI images (JPG, JPEG, PNG)
+- Run YOLOv11 inference on each image
+- View bounding boxes and class labels
+- Download annotated images
+- View detection details (class, confidence, coordinates)
 
 ---
 
-## 📂 Project Structure
-📦 BrainTumorYOLOv11
-┣ 📜 app.py # Main Streamlit app
-┣ 📜 best.pt # Trained YOLOv11 model weights
-┣ 📜 requirements.txt # Python dependencies
-┣ 📜 README.md # Project documentation
+## 🧰 Tech Stack
+
+- Python 3.11
+- Streamlit 1.39.0
+- Ultralytics YOLOv11 (`ultralytics==8.3.78`)
+- Pillow for image handling
+- OpenCV (headless) for drawing boxes
+- NumPy for image preprocessing
+
+---
+
+## 📦 Installation (Local)
+
+```bash
+git clone https://github.com/yourusername/brain-tumor-yolov11.git
+cd brain-tumor-yolov11
+pip install -r requirements.txt
+streamlit run app_brain_tumor.py
+
